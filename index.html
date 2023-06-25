@@ -3,28 +3,60 @@
     <head>
         <style>
             body {
-            background-color: rgb(213, 213, 213);
+            background-color: aliceblue;
             }
             .utama {
                 position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
             }
+
+            .home {
+                
+                display: flex;
+                background-color: rgb(34, 34, 34);
+                width: 100%;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                
+                
+            }
+            .home table{
+                background-color: rgb(34, 34, 34);
+                text-align: center;
+                font: 1em sans-serif;
+                color: aliceblue;
+                width: 20%;
+            }
+            .home table a {
+                font-size: 1em;
+                text-decoration: none;
+                color: aliceblue;
+            }
+            .home td {
+                padding-left: 8em;
+                padding-right: 8em;
+                border-right: solid 1px white;
+                border-left: solid 1px white;
+                background-color: transparent;
+            }
+
             .foto {
                 position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
             }
             .foto a {
                 content: "";
                 position: absolute;
                 text-decoration:double;
                 top:80% ;
-
                 color: white;
-                
                 border: 2px solid white;
                 border-radius: 5%;
                 font-size: 300%;
@@ -33,33 +65,36 @@
             }
             .foto img {
                 width: 100%;
-                height: auto;
+                height: 100%;
             }
 
 
             .instagram {
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                top: 65%;
-                left: 50%;
+                top: 51%;
+
                 transform: translate(-50%, -50%);
+                flex-direction: column;
+
             }
             .instagram img {
                 width: 8em;
-
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
             }
             .instagram a {
                 position: absolute;
                 text-decoration:none;
-                top:65% ;
                 padding: 0px;
                 position: absolute;
                 z-index: 1;
+                flex-direction: column;
             }
             
 
@@ -68,9 +103,9 @@
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                top: 50%;
-                left: 50%;
                 transform: translate(-50%, -50%);
+                flex-direction: column;
+                top: 40%;
             }
             .secreto img {
                 width: 9em;
@@ -81,18 +116,53 @@
             .secreto a {
                 position: absolute;
                 text-decoration:none;
-                top:50% ;
                 padding: 0px;
-                position: absolute;
                 z-index: 1;
             }
             
+            .tabel {
+                text-align: center;
+                background-color:rgb(34, 34, 34);
+                width: 100%;
+            }
+
+            .tabel table {
+                background-color: rgb(18, 18, 18);
+                color: rgb(255, 255, 255);
+                margin-top: 0;
+                width: 100%;
+            }
+
+            .tabel td {
+                margin-top: 30px;
+                background-color:  rgb(18, 18, 18);
+                padding-top: 10px;
+                margin-right: 0;
+                padding-bottom: 40%;
+            }
 
         </style>
+            
     </head>
 
     <body>
         <div class="utama">
+            
+            <div class="home">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://candraweb.github.io/beta/"><h3>HOME</h3></a>
+                        </td>
+                        <td>
+                            <a href="https://candraweb.github.io/beta/"><h3>ABOUT</h3></a>
+                        </td>
+                        <td>
+                            <a href="https://candraweb.github.io/beta/"><h3>TEST</h3></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
             <div class="foto">
                 <a href="http://candraweb.github.io/profile2/">Visit to Know More</a><img src="IMG5.jpg" alt="">
@@ -105,7 +175,18 @@
             <div class="secreto">
                 <a href="https://secreto.site/atla07"><img src="secreto.png" alt=""></a>
             </div>
+        </div>
 
+        <div class="second">
+            <div class="tabel">
+                <table>
+                    <tr>
+                        <td><h3>test1</h3></td>
+                        <td><h3>test1</h3></td>
+                        <td><h3>test1</h3></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </body>
 
