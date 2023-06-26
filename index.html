@@ -3,28 +3,67 @@
     <head>
         <style>
             body {
-            background-color: rgb(213, 213, 213);
+            background-color: rgb(19, 19, 19);
             }
             .utama {
                 position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
             }
+
+            .home {
+                
+                display: flex;
+                background-color: rgb(19, 19, 19);
+                width: 100%;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                
+                
+            }
+            .home table{
+                background-color: rgb(19, 19, 19);
+                text-align: center;
+                font: 1em sans-serif;
+                color: aliceblue;
+                width: 20%;
+            }
+            .home td:first-child {
+                border-right: solid 1px white;
+                border-left: solid 1px white;
+            }
+
+            .home td:last-child{
+                border-right: solid 1px white;
+                border-left: solid 1px white;
+            }
+            .home table a {
+                font-size: 1em;
+                text-decoration: none;
+                color: aliceblue;
+            }
+            .home td {
+                padding-left: 8em;
+                padding-right: 8em;
+                background-color: transparent;
+            }
+
             .foto {
                 position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
             }
             .foto a {
                 content: "";
                 position: absolute;
                 text-decoration:double;
                 top:80% ;
-
                 color: white;
-                
                 border: 2px solid white;
                 border-radius: 5%;
                 font-size: 300%;
@@ -33,33 +72,36 @@
             }
             .foto img {
                 width: 100%;
-                height: auto;
+                height: 100%;
             }
 
 
             .instagram {
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                top: 65%;
-                left: 50%;
+                top: 51%;
+
                 transform: translate(-50%, -50%);
+                flex-direction: column;
+
             }
             .instagram img {
                 width: 8em;
-
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
             }
             .instagram a {
                 position: absolute;
                 text-decoration:none;
-                top:65% ;
                 padding: 0px;
                 position: absolute;
                 z-index: 1;
+                flex-direction: column;
             }
             
 
@@ -68,9 +110,9 @@
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                top: 50%;
-                left: 50%;
                 transform: translate(-50%, -50%);
+                flex-direction: column;
+                top: 40%;
             }
             .secreto img {
                 width: 9em;
@@ -81,18 +123,74 @@
             .secreto a {
                 position: absolute;
                 text-decoration:none;
-                top:50% ;
                 padding: 0px;
-                position: absolute;
                 z-index: 1;
             }
             
+            .second {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .tabel {
+                display: flex;
+                background-color: rgb(19, 19, 19);
+                width: 100%;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .tabel table {
+                background-color: rgb(19, 19, 19);
+                text-align: center;
+                font: 1em;
+                color: aliceblue;
+                width: 100%;
+                margin-top: 0;
+            }
+
+            .tabel td:first-child {
+                width: 50%;
+                border-right: solid 1px white;
+            }
+            .tabel td:last-child {
+                border-left: solid 1px white;
+                width: 50%;
+            }
+
+            .tabel td {
+                flex: 1;
+                background-color:  rgb(19, 19, 19);
+                padding-top: 10px;
+                padding-bottom: 5%;
+                
+            }
 
         </style>
+            
     </head>
 
     <body>
         <div class="utama">
+            
+            <div class="home">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://candraweb.github.io/beta/"><h3>HOME</h3></a>
+                        </td>
+                        <td>
+                            <a href="https://candraweb.github.io/beta/"><h3>ABOUT</h3></a>
+                        </td>
+                        <td>
+                            <a href="https://candraweb.github.io/beta/"><h3>TEST</h3></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
             <div class="foto">
                 <a href="http://candraweb.github.io/profile2/">Visit to Know More</a><img src="IMG5.jpg" alt="">
@@ -105,7 +203,25 @@
             <div class="secreto">
                 <a href="https://secreto.site/atla07"><img src="secreto.png" alt=""></a>
             </div>
+        </div>
 
+        <div class="second">
+            <div class="tabel">
+                <table>
+                    <tr>
+                        <td><h3>My Moments</h3></td>
+                        <td><h3>life Quotes</h3></td>
+                    </tr>
+                    <tr>
+                        <td><img src="bali2.png" width="90%"><p>OSPELA Bali-Malang-Yogyakarta 2022</p></td>
+                        <td><p>Content for second column</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Content for first column</p></td>
+                        <td><p>Content for second column</p></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </body>
 
